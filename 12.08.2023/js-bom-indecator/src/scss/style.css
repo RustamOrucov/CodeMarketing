@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.bar-container {
+  position: fixed;
+  width: 100%;
+  background-color: gray;
+  transition: 0.2s;
+}
+.bar-container.active {
+  top: 0;
+}
+.bar-container .bar {
+  background-color: green;
+  width: 0%;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 2px 0;
+  color: #fff;
+}
+
+.content {
+  margin-top: 35px;
+}/*# sourceMappingURL=style.css.map */
