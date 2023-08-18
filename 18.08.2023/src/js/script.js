@@ -23,8 +23,8 @@ window.addEventListener("mousemove", (e) => {
   let y = e.clientY;
   pupil.forEach((el) => {
     
-       el.style.marginLeft=(x/10-15+'px')
-       el.style.marginTop=(y/10-5)+'px'
+       el.style.marginLeft=(x/10+'px')
+       el.style.marginTop=(y/10)+'px'
      
   });
   pupilCenter.forEach((el) => {
