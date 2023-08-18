@@ -13,7 +13,7 @@ setInterval(function(){
     eyeLid.forEach(el=>{
       el.style.height=`${70}px`
     })
-},4020)
+},4019)
 
 
 
