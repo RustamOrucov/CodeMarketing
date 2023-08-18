@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(196, 196, 196);
+}
+body .eye-wid {
+  width: 160px;
+  height: 180px;
+  background-color: #fff;
+  border-radius: 80px;
+  overflow: hidden;
+}
+body .display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .eyes {
+  display: flex;
+  gap: 70px;
+}
+body .eyes .eye-lid {
+  height: 70px;
+  background-color: black;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+body .eyes .eye-bot {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+body .eyes .eye-bot .pupil {
+  position: absolute;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(113, 128, 0);
+  overflow: hidden;
+}
+body .eyes .eye-bot .pupil .pupil-center {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */

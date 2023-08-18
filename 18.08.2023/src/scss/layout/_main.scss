@@ -1,0 +1,62 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(196, 196, 196);
+
+    .eye-wid {
+        width: 160px;
+        height: 180px;
+        background-color: #fff;
+        border-radius: 80px;
+        overflow: hidden;
+
+    }
+
+    .display {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .eyes {
+        display: flex;
+        gap: 70px;
+
+        .eye-lid {
+            height: 70px;
+            background-color: black;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .eye-bot {
+            height: 100%;
+            width: 100%;
+            position: relative;
+
+            .pupil {
+                
+                z-index: 1;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: rgb(113, 128, 0);
+                overflow: hidden;
+                
+
+                .pupil-center {
+                     absolute;
+                    width: 40px;
+                    height: 40px;
+                    background-color: black;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+
+    }
+}
