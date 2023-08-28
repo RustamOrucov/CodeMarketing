@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bona Nova", serif;
+}
+
+body {
+  background: rgb(26, 5, 255);
+  background: linear-gradient(229deg, rgb(40, 30, 154) 7%, rgb(37, 86, 89) 100%);
+}
+body main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+body main h1 i {
+  margin-left: 40px;
+  color: red;
+}
+body main .list-container {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 20px;
+  width: 37%;
+}
+body main .list-container .input-area {
+  display: flex;
+  position: relative;
+}
+body main .list-container .input-area .btn {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  border-radius: 20px;
+  padding: 14px 45px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: lime;
+  transition: 0.4s;
+  color: #fff;
+  text-transform: uppercase;
+}
+body main .list-container .input-area .btn:hover {
+  transform: scale(1.1);
+}
+body main .list-container .input-area input {
+  width: 100%;
+  background-color: bisque;
+  border-radius: 20px;
+  font-size: 20px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  text-transform: capitalize;
+}
+body main .list-container ul {
+  list-style-type: none;
+  margin-top: 40px;
+  padding: 0 10px;
+}
+body main .list-container ul li {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  margin-top: 15px;
+}
+body main .list-container ul li i {
+  cursor: pointer;
+}
+body main .list-container .del-btn {
+  display: none;
+  padding: 5px 10px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  background-color: red;
+  color: #fff;
+  margin-top: 40px;
+  margin-left: 38%;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
