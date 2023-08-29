@@ -16,7 +16,7 @@ const getList = async () => {
   
     data.forEach((el) => {
     
-     //  !  creat element
+     //  ! creat element
       const listItem = document.createElement("li");
       listItem.id=`${el.id}`
       listItem.innerHTML = `
@@ -48,10 +48,6 @@ const getList = async () => {
           pTxt.style.textDecoration = "line-through";
         }
       });
-
-
-
-
 
 
       // ! dell button
