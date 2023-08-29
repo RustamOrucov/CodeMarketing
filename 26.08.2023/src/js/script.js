@@ -16,7 +16,7 @@ const getList = async () => {
   
     data.forEach((el) => {
     
-     //  ! function creat element
+     //  !  creat element
       const listItem = document.createElement("li");
       listItem.id=`${el.id}`
       listItem.innerHTML = `
