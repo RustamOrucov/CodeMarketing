@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 90%;
+  margin: 50px auto;
+  position: relative;
+}
+
+.container .title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.container .cards {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  gap: 13px;
+}
+.container .cards .card-inner .card {
+  width: 157px;
+  height: 170px;
+}
+@media (min-width: 481px) {
+  .container .cards .card-inner .card {
+    width: 136px;
+  }
+}
+@media (min-width: 769px) {
+  .container .cards .card-inner .card {
+    width: 144px;
+  }
+}
+@media (min-width: 1025px) {
+  .container .cards .card-inner .card {
+    width: 144px;
+  }
+}
+@media (min-width: 1201px) {
+  .container .cards .card-inner .card {
+    width: 144px;
+  }
+}
+.container .cards .card-inner .card .img {
+  margin-bottom: 10px;
+}
+.container .cards .card-inner .card .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.container .cards .card-inner .card .img .content {
+  font-weight: 600;
+}
+.container .cards i {
+  position: absolute;
+  right: -20px;
+  top: 135px;
+  font-size: 30px;
+  padding: 4px 9px;
+  background-color: rgb(221, 221, 221);
+  border-radius: 50%;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
