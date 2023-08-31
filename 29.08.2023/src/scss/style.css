@@ -5,65 +5,109 @@
 }
 
 .container {
-  max-width: 90%;
+  max-width: 88%;
   margin: 50px auto;
   position: relative;
 }
+@media (min-width: 576px) {
+  .container {
+    width: 566px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 758px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 982px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1100px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1300px;
+  }
+}
 
-.container .title {
-  font-weight: bold;
-  font-size: 20px;
+.card-area .container {
+  overflow: hidden;
+}
+.card-area .container .title {
   margin-bottom: 30px;
 }
-.container .cards {
-  overflow: hidden;
-  width: 100%;
+.card-area .container .title h3 {
+  font-size: 29px;
+}
+.card-area .container .cards {
+  transition: 0.4s;
   display: flex;
-  gap: 13px;
+  gap: 20px;
 }
-.container .cards .card-inner .card {
-  width: 157px;
-  height: 170px;
+.card-area .container .cards .card {
+  width: 100%;
 }
-@media (min-width: 481px) {
-  .container .cards .card-inner .card {
-    width: 136px;
+.card-area .container .cards .card .card-inner {
+  width: 140px;
+}
+@media (min-width: 390px) {
+  .card-area .container .cards .card .card-inner {
+    width: 160px;
   }
 }
-@media (min-width: 769px) {
-  .container .cards .card-inner .card {
-    width: 144px;
+@media (min-width: 576px) {
+  .card-area .container .cards .card .card-inner {
+    width: 135px;
   }
 }
-@media (min-width: 1025px) {
-  .container .cards .card-inner .card {
-    width: 144px;
+@media (min-width: 768px) {
+  .card-area .container .cards .card .card-inner {
+    width: 128px;
   }
 }
-@media (min-width: 1201px) {
-  .container .cards .card-inner .card {
-    width: 144px;
+@media (min-width: 992px) {
+  .card-area .container .cards .card .card-inner {
+    width: 167px;
   }
 }
-.container .cards .card-inner .card .img {
+.card-area .container .cards .card .card-inner .img {
   margin-bottom: 10px;
 }
-.container .cards .card-inner .card .img img {
+.card-area .container .cards .card .card-inner .img img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
   object-fit: cover;
 }
-.container .cards .card-inner .card .img .content {
-  font-weight: 600;
+.card-area .container .cards .card .card-inner .content p {
+  font-size: 17px;
+  transition: 0.4s;
 }
-.container .cards i {
+.card-area .container .cards .card .card-inner .content p:hover {
+  color: orange;
+}
+.card-area .container i {
   position: absolute;
-  right: -20px;
-  top: 135px;
-  font-size: 30px;
-  padding: 4px 9px;
-  background-color: rgb(221, 221, 221);
+  padding: 7px 10px;
+  background-color: rgb(225, 225, 225);
   border-radius: 50%;
   cursor: pointer;
+}
+.card-area .container i:hover {
+  color: orange;
+}
+.card-area .container .fa-angle-right {
+  right: 0;
+  top: 55%;
+}
+.card-area .container .fa-angle-left {
+  top: 55%;
+  left: 0%;
+  z-index: 9999;
+  display: none;
 }/*# sourceMappingURL=style.css.map */

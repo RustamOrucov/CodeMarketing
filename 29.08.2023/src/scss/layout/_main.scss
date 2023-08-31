@@ -1,64 +1,128 @@
 .container {
-    max-width: 90%;
+    max-width: 88%;
     margin: 50px auto;
     position: relative;
-}
 
-.container {
-
-    .title {
-        font-weight: bold;
-        font-size: 20px;
-        margin-bottom: 30px;
+    @media(min-width:576px) {
+        width: 566px;
     }
 
-    .cards {
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        gap: 13px;
-        
-        .card-inner {
-            .card {
-                width: 157px;
-                height: 170px;
-                @media (min-width: 481px) {
-                    width: 136px;
-                }
-                @media (min-width: 769px) {
-                    width: 144px;
-                }
-                @media (min-width: 1025px) {
-                    width: 144px;
-                }
-                @media (min-width: 1201px) {
-                    width: 144px;
-                }
+    @media(min-width:768px) {
+        width: 758px;
+    }
 
-                .img {
-                    margin-bottom: 10px;
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 10px;
-                        object-fit: cover;
+    @media(min-width:992px) {
+        width: 982px;
+    }
+
+    @media(min-width:1200px) {
+        width: 1100px;
+    }
+
+    @media(min-width:1400px) {
+        width: 1300px;
+    }
+}
+
+
+.card-area {
+    .container {
+        overflow: hidden;
+       
+
+        .title {
+            margin-bottom: 30px;
+
+            h3 {
+                font-size: 29px;
+            }
+        }
+
+        .cards {
+            transition: .4s;
+            display: flex;
+            gap: 20px;
+
+            .card {
+
+                width: 100%;
+
+                .card-inner {
+                    width: 140px;
+
+                    @media(min-width:390px) {
+                        width: 160px;
+
+                    }
+
+                    @media(min-width:576px) {
+                        width: 135px;
+                    }
+
+                    @media(min-width:768px) {
+                        width: 128px;
+                    }
+
+                    @media(min-width:992px) {
+                        width: 167px;
+
+                    }
+
+                    // @media(min-width:1200px) {
+                    //     width: 20%;
+                    //     margin-right: 20px;
+                    // }
+
+                    // @media(min-width:1400px) {
+                    //     width: calc(100%/7);
+                    //     margin-right: 20px;
+                    // }
+
+                    .img {
+                        margin-bottom: 10px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 5px;
+                            object-fit: cover;
+                        }
                     }
 
                     .content {
-                        font-weight: 600;
+                        p {
+                            font-size: 17px;
+                            transition: .4s;
+
+                            &:hover {
+                                color: orange;
+                            }
+                        }
                     }
                 }
             }
         }
-        i{
-            position: absolute;
-            right:-20px ;
-            top: 135px;
-            font-size: 30px;
-           padding: 4px 9px;
-            background-color: rgb(221, 221, 221);
-            border-radius: 50%;
-            cursor: pointer;
+         i{
+
+             position: absolute;
+             padding: 7px 10px;
+             background-color: rgb(225, 225, 225);
+             border-radius: 50%;
+             cursor: pointer;
+             &:hover {
+                 color: orange;
+             }
+         }
+         .fa-angle-right{
+            right: 0;
+            top: 55%;
+
+        }
+        .fa-angle-left{
+            top: 55%;
+            left: 0%;
+            z-index: 9999;
+            display: none;
         }
 
     }
