@@ -6,7 +6,7 @@ const container = document.querySelector(".cards").offsetWidth;
 
 let translateX = 0;
 
-// kenarda qalan kart sayi
+// the number of cards left on the edge
 let l = card.length;
 let z = Math.round(container / card[0].offsetWidth);
 let d = l - z;
